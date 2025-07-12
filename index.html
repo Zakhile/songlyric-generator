@@ -4,13 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>🎶Song-lyric Generator🎶</title>
+    <title>🎶Song-lyrics Generator🎶</title>
   </head>
-  <h1>🎶 Welcome to the Music hub Song-lyric Generator🎶</h1>
   <body>
+    <header>
+      <h1>🎶 AI Lyrics Generator🎶</h1>
+    </header>
+    <main>
+      <p>
+        This is a simple AI song lyric generator that uses the SheCodes API to
+        generate lyrics based on a given prompt. You can enter a prompt and
+        click the "Generate Lyrics" button to get a new set of lyrics.
+      </p>
+      <div class="container">
+        <label for="genre">Select Genre:</label>
+        <select id="genre">
+          <option value="Pop">Pop</option>
+          <option value="Rap">Rap</option>
+          <option value="Country">Country</option>
+          <option value="Rock">Rock</option>
+          <option value="RnB">RnB</option>
+        </select>
+
+        <br />
+
+        <input
+          id="theme"
+          type="text"
+          placeholder="Enter song theme (e.g. heartbreak, freedom)"
+          required
+          autofocus
+          autocomplete="off" />
+
+        <button>Generate Lyrics</button>
+
+        <div id="output"></div>
+      </div>
+    </main>
+    <br />
+    <p class="note">
+      Note: The lyrics generated are not real and are for entertainment purposes
+      only. The AI model generates lyrics based on the input theme and genre,
+      but they do not represent actual songs or artists.
+    </p>
+
     <footer>
       <p>
-        This Ai song generator is coded by
+        This Ai song-lyrics generator is coded by
         <a href="https://github.com/Zakhile" target="_blank">Ntokozo Zulu,</a>
         and is openly sourced on
         <a href="https://github.com/Zakhile/songlyric-generator" target="_blank"
@@ -24,6 +64,6 @@
         >.
       </p>
     </footer>
-    <script src="src/script.js" defer></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
