@@ -1,0 +1,125 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff2e0;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  background-color: #a2aadb;
+  color: white;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Main content container */
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #c0c9ee;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+/* Form styling */
+form fieldset {
+  border: none;
+  padding: 0;
+}
+
+form legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Button styles */
+button {
+  background-color: #a2aadb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #898ac4;
+}
+
+/* Output area */
+#output {
+  background-color: #f9f9ff;
+  border-left: 4px solid #a2aadb;
+  padding: 1rem;
+  margin-top: 2rem;
+  white-space: pre-wrap;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+/* Note under main content */
+.note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+footer a {
+  color: #a2aadb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
