@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff2e0;
   color: #333;
   line-height: 1.6;
@@ -61,7 +61,7 @@ form legend {
 label {
   display: block;
   margin-top: 1rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 input,
@@ -81,11 +81,17 @@ button {
   background-color: #a2aadb;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #898ac4;
+  transform: translateY(-1px);
+}
+
+button:focus {
+  outline: 2px dashed #fff;
+  outline-offset: 2px;
 }
 
 /* Output area */
@@ -97,6 +103,7 @@ button:hover {
   white-space: pre-wrap;
   font-style: italic;
   border-radius: 5px;
+  min-height: 60px;
 }
 
 /* Note under main content */
@@ -105,6 +112,42 @@ button:hover {
   color: #666;
   margin-top: 2rem;
   text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+footer a {
+  color: #a2aadb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
 }
 
 /* Footer */
