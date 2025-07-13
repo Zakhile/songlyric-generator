@@ -4,66 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>🎶Song-lyrics Generator🎶</title>
+    <title>🎶Song Lyrics Generator🎶</title>
   </head>
   <body>
     <header>
-      <h1>🎶 AI Lyrics Generator🎶</h1>
+      <h1>🎶 AI Lyrics Generator 🎶</h1>
     </header>
+
     <main>
-      <p>
-        This is a simple AI song lyric generator that uses the SheCodes API to
-        generate lyrics based on a given prompt. You can enter a prompt and
-        click the "Generate Lyrics" button to get a new set of lyrics.
-      </p>
-      <div class="container">
-        <label for="genre">Select Genre:</label>
-        <select id="genre">
-          <option value="Pop">Pop</option>
-          <option value="Rap">Rap</option>
-          <option value="Country">Country</option>
-          <option value="Rock">Rock</option>
-          <option value="RnB">RnB</option>
-        </select>
+      <section class="intro">
+        <p>
+          Enter a genre and a theme to generate unique AI-generated song lyrics
+          using the SheCodes API.
+        </p>
+      </section>
 
-        <br />
+      <section class="container">
+        <form id="lyrics-form">
+          <fieldset>
+            <legend>Generate Your Lyrics</legend>
 
-        <input
-          id="theme"
-          type="text"
-          placeholder="Enter song theme (e.g. heartbreak, freedom)"
-          required
-          autofocus
-          autocomplete="off" />
+            <label for="genre">Select Genre:</label>
+            <select id="genre" name="genre">
+              <option value="Pop">Pop</option>
+              <option value="Rap">Rap</option>
+              <option value="Country">Country</option>
+              <option value="Rock">Rock</option>
+              <option value="RnB">RnB</option>
+            </select>
 
-        <button>Generate Lyrics</button>
+            <label for="theme">Song Theme:</label>
+            <input
+              id="theme"
+              name="theme"
+              type="text"
+              placeholder="e.g. heartbreak, freedom"
+              required
+              autofocus
+              autocomplete="off" />
+
+            <button type="submit">Generate Lyrics</button>
+          </fieldset>
+        </form>
 
         <div id="output"></div>
-      </div>
+      </section>
+
+      <p class="note">
+        Note: Lyrics are generated for entertainment purposes only and do not
+        reflect real songs or artists.
+      </p>
     </main>
-    <br />
-    <p class="note">
-      Note: The lyrics generated are not real and are for entertainment purposes
-      only. The AI model generates lyrics based on the input theme and genre,
-      but they do not represent actual songs or artists.
-    </p>
 
     <footer>
       <p>
-        This Ai song-lyrics generator is coded by
-        <a href="https://github.com/Zakhile" target="_blank">Ntokozo Zulu,</a>
-        and is openly sourced on
-        <a href="https://github.com/Zakhile/songlyric-generator" target="_blank"
-          >GitHub,</a
-        >
-        and is hosted on
+        Coded by
         <a
-          href="https://app.netlify.com/projects/songlyricsgenerator/"
+          href="https://github.com/Zakhile"
           target="_blank"
+          rel="noopener noreferrer"
+          >Ntokozo Zulu</a
+        >, open-sourced on
+        <a
+          href="https://github.com/Zakhile/songlyric-generator"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >, and hosted on
+        <a
+          href="https://songlyricsgenerator.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           >Netlify</a
         >.
       </p>
     </footer>
-    <script src="src/script.js"></script>
+
+    <script src="./src/script.js"></script>
   </body>
 </html>
